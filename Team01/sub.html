@@ -5,6 +5,12 @@
 	<link rel="shortcut icon" href="images/cidow.ico" />
 	<title>WSRI - 웹표준연구센터</title>
 	<link rel="stylesheet" href="css/contents.css">
+	<script src="js/mootools-yui-compressed.js"></script>
+	<script src="js/krystalrae-yc.js"></script>
+	<script src="js/mootools-yui-compressed.js"></script>
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/common.js"></script>
+  <!-- <script src="js/modernizr-custom-2.js"></script> -->
 </head>
 <body>
 	<section class="subMain">
@@ -22,10 +28,10 @@
 		<div class="innerBox">
 			<p>웹 표준은 W3C(World Web Consortium), ECMA(European Computer Manufacturers Association) International, IETF(The Internet Engineering Task Force), ASIS(Organization for the Advancement of Structured Information Standards)와 같은 표준화기구에서 승인한 개방형 인터넷표준을 말합니다.<br />대표적인 웹 표준화 기구인 W3C의 경우 아키텍처(Architerture), 상호작용(Interaction), 기술과 사회 도메인(Technology and Society), 유비쿼터스 웹(Ubiquitous Web), 웹 접근성 이니셔티브(Web Axxessibility Initiative), 품질보증(Quality Assurance) 등 6개 도메인을 중심으로 웹 표준화 활동을 수행하고 있습니다.</p>
 		</div>
-		<h2>웹표준(Web Standards) 장점</h2>
 		<div class="innerBox">
+		<h2>웹표준(Web Standards) 장점</h2>
 			<ol>
-				<li>1. 어떤 웹브라우저에서도 똑같은 서비스를 볼 수 있다. 웹브라우저는 Internet Explorer만 있는 것이 아니라, FireFox, Google Chrome등 다양하게 존재하며 웹표준을 지키게 되면, 어떤 웹브라우저에서도 레이아웃이 망가지지 않고 사용자들에게 서비스를 할 수 있다.</li>
+				<li >1. 어떤 웹브라우저에서도 똑같은 서비스를 볼 수 있다. 웹브라우저는 Internet Explorer만 있는 것이 아니라, FireFox, Google Chrome등 다양하게 존재하며 웹표준을 지키게 되면, 어떤 웹브라우저에서도 레이아웃이 망가지지 않고 사용자들에게 서비스를 할 수 있다.</li>
 				<li> 2. 웹 사이트 변경작업이 쉬워진다. 웹표준을 지키는 사이트라면, 문서구조와 스타일시트가 별도의 파일로 관리되기 때문에 전체 페이지의 스타일을 일괄적으로 변경하기도 편리하게 된다</li>
 				<li>3. 페이지 렌더링 속도가 빨라진다. 디자인 부분을 모두 CSS파일로 정리해둔다면, Internet Explorer의 경우, 해당 CSS파일을 캐싱하였다가 다른 페이지를 접속하더라도 이미 CSS 정보는 유지하고 있어 보다 빠르게 페이지를 렌더링을 할 수 있다.</li>
 				<li>4. 접근하기 쉬운 사이트가 된다. 웹표준을 지킨다면, 남녀노소할 것없이 장애인이라고 하여 쉽고 어려움없이 접속하여 서비스를 받을 수 있다. 검색엔진에서 상위로 표시된다. 구글과 같은 검색사이트에서 검색결과로 페이지를 상위에 연결되어 나타낼 수 있다.</li>
@@ -50,18 +56,21 @@
 		</div>
 	</section>
 	<section id="page3" class="subIntro">
-		<h1>웹접근성 소개</h1>
+		<h1>Web Accessibility</h1>
+		<div class="underline"></div>
 		<h2>웹접근성(Web Accessibility) 이란?</h2>
-		<p>장애에 구애없이 모든 사람들이 손쉽게 정보를 공유할 수 있는 인터넷 공간 만들기</p>
-		<p>월드 와이드 웹 (World Wide Web)을 창시한 팀 버너스 리(Tim Berners-Lee)는 웹이란 ‘장애에 구애 없이 모든 사람들이 손쉽게 정보를 공유할 수 있는 공간’이라고 정의하였으며, 웹 콘텐츠를 제작할 때에는 장애에 구애됨이 없이 누구나 접근할 수 있도록 제작하여야 한다고 하였다. 이렇듯 웹 창시자가 웹의 기본적 철학에서 웹 접근성 부문을 강조함에도 불구하고, 웹 접근성을 바라보는 입장에 따라 다르게 정의하고 있다.
-		하지만, 접근에 대한 개념의 다양성으로 인한 인식의 부족보다는 접근성에 대한 개념을 잘못 이해하고 있는 것이 더욱 문제이다.
-		즉, 접근성을 단지 장애인에게 국한된 문제라고 잘못 이해하고 있는 경우가 대부분이라는 것이다. 비록 접근성 준수가 장애인에게 가장 혜택이 많이 돌아가는 것은 사실이지만, 접근성이란 장애인뿐만 아니라 모든 사람이 정보통신 기기나 서비스를 손쉽게 활용할 수 있도록 만드는 것을 말하는 것이다.
-		예를 들자면 장애인과 노인들을 위해 개발된 리모콘, 전화, 자동문 등의 제품들이 널리 보급되면서 궁극적으로는 모든 사람들이 편리하게 활용하게 된 것을 들 수 있다.
-		이러한 접근성 개념은 정보통신 분야에서 다양한 제품 및 서비스 간의 호환성 문제, 이동 정보통신 기기 등으로 그 필요성 및 중요성이 더욱 증대되고 있다. 확대하고 있다.
-		월드 와이드 웹 컨소시엄(W3C: World Wide Web Consortium)
-		웹 접근성 이니셔티브(WAI: Web Accessibility Initiative)와 짐 대처 (Jim. Thatcher)는 웹 접근성에 대해 매우 현실적으로 정의하고 있다. 즉, 장애를 가진 사람들이 웹 콘텐츠를 인지하고, 편리하게 사용할 수 있으며, 그 내용이 이해하기 쉬워야 하며, 견고성을 지녀야 웹 접근성이 있다고 보는 관점이다.
-		인터넷 전자도서관인 Wikipedia는 웹 접근성의 개념을 웹 콘텐츠 뿐만 아니라 인터넷을 통하여 전달될 수 있는 모든 콘텐츠로 확대하고 있다.
-		</p>
+		<p style="font-size:1.2em; font-weight:bold; color:#666; font-family:'나눔고딕'">&quot;장애에 구애없이 모든 사람들이 손쉽게 정보를 공유할 수 있는 인터넷 공간 만들기&quot;</p>
+		<div class="innerBox">
+			<p>월드 와이드 웹 (World Wide Web)을 창시한 팀 버너스 리(Tim Berners-Lee)는 웹이란 ‘장애에 구애 없이 모든 사람들이 손쉽게 정보를 공유할 수 있는 공간’이라고 정의하였으며, 웹 콘텐츠를 제작할 때에는 장애에 구애됨이 없이 누구나 접근할 수 있도록 제작하여야 한다고 하였다. 이렇듯 웹 창시자가 웹의 기본적 철학에서 웹 접근성 부문을 강조함에도 불구하고, 웹 접근성을 바라보는 입장에 따라 다르게 정의하고 있다.<br /><br />
+			하지만, 접근에 대한 개념의 다양성으로 인한 인식의 부족보다는 접근성에 대한 개념을 잘못 이해하고 있는 것이 더욱 문제이다.<br />
+			즉, 접근성을 단지 장애인에게 국한된 문제라고 잘못 이해하고 있는 경우가 대부분이라는 것이다. 비록 접근성 준수가 장애인에게 가장 혜택이 많이 돌아가는 것은 사실이지만, 접근성이란 장애인뿐만 아니라 모든 사람이 정보통신 기기나 서비스를 손쉽게 활용할 수 있도록 만드는 것을 말하는 것이다.<br />
+			예를 들자면 장애인과 노인들을 위해 개발된 리모콘, 전화, 자동문 등의 제품들이 널리 보급되면서 궁극적으로는 모든 사람들이 편리하게 활용하게 된 것을 들 수 있다.<br /><br />
+			이러한 접근성 개념은 정보통신 분야에서 다양한 제품 및 서비스 간의 호환성 문제, 이동 정보통신 기기 등으로 그 필요성 및 중요성이 더욱 증대되고 있다. 확대하고 있다.<br /><br />
+			월드 와이드 웹 컨소시엄(W3C: World Wide Web Consortium)
+			웹 접근성 이니셔티브(WAI: Web Accessibility Initiative)와 짐 대처 (Jim. Thatcher)는 웹 접근성에 대해 매우 현실적으로 정의하고 있다. <br />즉, 장애를 가진 사람들이 웹 콘텐츠를 인지하고, 편리하게 사용할 수 있으며, 그 내용이 이해하기 쉬워야 하며, 견고성을 지녀야 웹 접근성이 있다고 보는 관점이다.
+			인터넷 전자도서관인 Wikipedia는 웹 접근성의 개념을 웹 콘텐츠 뿐만 아니라 인터넷을 통하여 전달될 수 있는 모든 콘텐츠로 확대하고 있다.
+			</p>
+		</div>
 	</section>
 	<section id="page4" class="subIntro">
 		<h1>Researcher Introduce</h1>
@@ -103,7 +112,7 @@
 		    </div>
 		</div>
 		<p>Miss Toba<br>design by 밍죠</p>
-		<ul>
+		<!--<ul>
 			<li>
 				<h2>Seung Heon Lee</h2>
 			</li>
@@ -119,34 +128,162 @@
 			<li>
 				<h2>Bonny Bak</h2>
 			</li>
-		</ul>
+		</ul>-->
 	</section>
-<!-- 	<section id="collection">
+	<section id="collection" style="height:100%">
 	<ul>
-		<li id="outfit1" class="outfit" style="display: block; background-image: url(http://krystalrae.com/img/2013/krystalrae-2013-fall-outfit-1-1100px.jpg); background-attachment: fixed; background-color: transparent; background-size: 261px 624px; height: 624px; -webkit-background-size: 261px 624px; background-position: 50% 0px; background-repeat: no-repeat no-repeat;"><noscript>&lt;img src="/img/2013/krystalrae-2013-fall-outfit-1-700px.jpg" alt="Outfit 1 of 4" title="Outfit 1 of 4"&gt;</noscript></li>
-		<li id="outfit2" class="outfit" style="display: block; background-image: url(http://krystalrae.com/img/2013/krystalrae-2013-fall-outfit-2-1100px.jpg); background-attachment: fixed; background-color: transparent; background-size: 261px 624px; height: 624px; -webkit-background-size: 261px 624px; background-position: 50% 0px; background-repeat: no-repeat no-repeat;"><noscript>&lt;img src="/img/2013/krystalrae-2013-fall-outfit-2-700px.jpg" alt="Outfit 2 of 4" title="Outfit 2 of 4"&gt;</noscript></li>
-		<li id="outfit3" class="outfit" style="display: block; background-image: url(http://krystalrae.com/img/2013/krystalrae-2013-fall-outfit-3-1100px.jpg); background-attachment: fixed; background-color: transparent; background-size: 261px 624px; height: 624px; -webkit-background-size: 261px 624px; background-position: 50% 0px; background-repeat: no-repeat no-repeat;"><noscript>&lt;img src="/img/2013/krystalrae-2013-fall-outfit-3-700px.jpg" alt="Outfit 3 of 4" title="Outfit 3 of 4"&gt;</noscript></li>
-		<li id="outfit4" class="outfit" style="display: block; background-image: url(http://krystalrae.com/img/2013/krystalrae-2013-fall-outfit-4-1100px.jpg); background-attachment: fixed; background-color: transparent; background-size: 261px 624px; height: 624px; -webkit-background-size: 261px 624px; background-position: 50% 0px; background-repeat: no-repeat no-repeat;"><noscript>&lt;img src="/img/2013/krystalrae-2013-fall-outfit-4-700px.jpg" alt="Outfit 4 of 4" title="Outfit 4 of 4"&gt;</noscript></li>
+		<li style="display: block; background: url('http://krystalrae.com/img/2013/krystalrae-2013-holiday-outfit-1-1000px.jpg') no-repeat fixed center 0px / 207px 822px transparent; height: 822px;" id="outfit1" class="outfit"><noscript><img src="/img/2013/krystalrae-2013-holiday-outfit-1-700px.jpg" alt="Outfit 1 of 8" title="Outfit 1 of 8"></noscript></li>
+		<li style="display: block; background: url('http://krystalrae.com/img/2013/krystalrae-2013-holiday-outfit-2-1000px.jpg') no-repeat fixed center 0px / 207px 822px transparent; height: 822px;" id="outfit2" class="outfit"><noscript><img src="/img/2013/krystalrae-2013-holiday-outfit-2-700px.jpg" alt="Outfit 2 of 8" title="Outfit 2 of 8"></noscript></li>
+		<li style="display: block; background: url('http://krystalrae.com/img/2013/krystalrae-2013-holiday-outfit-3-1000px.jpg') no-repeat fixed center 0px / 207px 822px transparent; height: 822px;" id="outfit3" class="outfit"><noscript><img src="/img/2013/krystalrae-2013-holiday-outfit-3-700px.jpg" alt="Outfit 3 of 8" title="Outfit 3 of 8"></noscript></li>
+		<li style="display: block; background: url('http://krystalrae.com/img/2013/krystalrae-2013-holiday-outfit-4-1000px.jpg') no-repeat fixed center 0px / 207px 822px transparent; height: 822px;" id="outfit4" class="outfit"><noscript><img src="/img/2013/krystalrae-2013-holiday-outfit-4-700px.jpg" alt="Outfit 4 of 8" title="Outfit 4 of 8"></noscript></li>
+		<li style="display: block; background: url('http://krystalrae.com/img/2013/krystalrae-2013-holiday-outfit-5-1000px.jpg') no-repeat fixed center 0px / 207px 822px transparent; height: 822px;" id="outfit5" class="outfit"><noscript><img src="/img/2013/krystalrae-2013-holiday-outfit-5-700px.jpg" alt="Outfit 5 of 8" title="Outfit 5 of 8"></noscript></li>
+		<li style="display: block; background: url('http://krystalrae.com/img/2013/krystalrae-2013-holiday-outfit-6-1000px.jpg') no-repeat fixed center 0px / 207px 822px transparent; height: 822px;" id="outfit6" class="outfit"><noscript><img src="/img/2013/krystalrae-2013-holiday-outfit-6-700px.jpg" alt="Outfit 6 of 8" title="Outfit 6 of 8"></noscript></li>
+		<li style="display: block; background: url('http://krystalrae.com/img/2013/krystalrae-2013-holiday-outfit-7-1000px.jpg') no-repeat fixed center 0px / 207px 822px transparent; height: 822px;" id="outfit7" class="outfit"><noscript><img src="/img/2013/krystalrae-2013-holiday-outfit-7-700px.jpg" alt="Outfit 7 of 8" title="Outfit 7 of 8"></noscript></li>
+		<li style="display: block; background: url('http://krystalrae.com/img/2013/krystalrae-2013-holiday-outfit-8-1000px.jpg') no-repeat fixed center 0px / 207px 822px transparent; height: 822px;" id="outfit8" class="outfit"><noscript><img src="/img/2013/krystalrae-2013-holiday-outfit-8-700px.jpg" alt="Outfit 8 of 8" title="Outfit 8 of 8"></noscript></li>
 	</ul>
-	<nav>
-		<h2 class="visuallyhidden">Navigation: Krystalrae Fall 2013 Collection</h2>
-		<ul id="outfit-drawer" class="clearfix" style="top: 252px; display: block;">
-		<li><a href="#outfit1" id="outfit1-link" class="outfit-link " title="View Outfit 1 of 4.">• <span class="visuallyhidden">View Outfit 1 of 4.</span></a></li>
-		<li><a href="#outfit2" id="outfit2-link" class="outfit-link " title="View Outfit 2 of 4.">• <span class="visuallyhidden">View Outfit 2 of 4.</span></a></li>
-		<li><a href="#outfit3" id="outfit3-link" class="outfit-link " title="View Outfit 3 of 4.">• <span class="visuallyhidden">View Outfit 3 of 4.</span></a></li>
-		<li><a href="#outfit4" id="outfit4-link" class="outfit-link outfit-current-link" title="View Outfit 4 of 4.">• <span class="visuallyhidden">View Outfit 4 of 4.</span></a></li>
+	<!-- <nav>
+		<h2 class="visuallyhidden">Navigation: Krystalrae Holiday 2013 Collection</h2>
+		<ul style="top: 291px; display: block;" id="outfit-drawer" class="clearfix">
+		<li><a href="#outfit1" id="outfit1-link" class="outfit-link " title="View Outfit 1 of 8.">• <span class="visuallyhidden">View Outfit 1 of 8.</span></a></li>
+		<li><a href="#outfit2" id="outfit2-link" class="outfit-link " title="View Outfit 2 of 8.">• <span class="visuallyhidden">View Outfit 2 of 8.</span></a></li>
+		<li><a href="#outfit3" id="outfit3-link" class="outfit-link " title="View Outfit 3 of 8.">• <span class="visuallyhidden">View Outfit 3 of 8.</span></a></li>
+		<li><a href="#outfit4" id="outfit4-link" class="outfit-link " title="View Outfit 4 of 8.">• <span class="visuallyhidden">View Outfit 4 of 8.</span></a></li>
+		<li><a href="#outfit5" id="outfit5-link" class="outfit-link " title="View Outfit 5 of 8.">• <span class="visuallyhidden">View Outfit 5 of 8.</span></a></li>
+		<li><a href="#outfit6" id="outfit6-link" class="outfit-link outfit-current-link" title="View Outfit 6 of 8.">• <span class="visuallyhidden">View Outfit 6 of 8.</span></a></li>
+		<li><a href="#outfit7" id="outfit7-link" class="outfit-link " title="View Outfit 7 of 8.">• <span class="visuallyhidden">View Outfit 7 of 8.</span></a></li>
+		<li><a href="#outfit8" id="outfit8-link" class="outfit-link " title="View Outfit 8 of 8.">• <span class="visuallyhidden">View Outfit 8 of 8.</span></a></li>
 		</ul>
-		<div id="outfit-nav-container" style="display: block; min-width: 1008px; position: fixed; width: 100%; bottom: 0px; left: 0px;">
+		<div style="display: block; min-width: 1008px; position: fixed; width: 100%; bottom: 0px; left: 0px;" id="outfit-nav-container">
 		<ul id="outfit-nav" class="clearfix">
-		<li id="collection-title">Fall 2013<span class="visuallyhidden"> Collection</span></li>
-		<li id="outfit-next" style="display: block;"><a href="#" class="ir" title="View the next outfit.">View the next outfit.</a></li>
-		<li id="outfit-prev" style="display: block;"><a href="#" class="ir" title="View the previous outfit.">View the previous outfit.</a></li>
-		<li id="outfit-num" style="display: block;">04 / 04</li>
+		<li id="collection-title">Holiday 2013<span class="visuallyhidden"> Collection</span></li>
+		<li style="display: block;" id="outfit-next"><a href="#" class="ir" title="View the next outfit.">View the next outfit.</a></li>
+		<li style="display: block;" id="outfit-prev"><a href="#" class="ir" title="View the previous outfit.">View the previous outfit.</a></li>
+		<li style="display: block;" id="outfit-num">06 / 08</li>
 		</ul>
 		</div>
-	</nav>
-</section> -->
-	<script src="https://ajax.googleapis.com/ajax/libs/mootools/1.4.3/mootools-yui-compressed.js"></script>
-	<script src="http://krystalrae.com/js/krystalrae-yc.11.js"></script>
+	</nav>	 -->
+	</section>
+	<section id="page5" class="subIntro">
+		<h1>Project History</h1>
+		<div class="underline"></div>
+		<div class="ProjectBox" >
+			<ul class="project_board">
+				<li><img src="images/h_image01.jpg" alt="현대자동차그룹(5개사이트) 웹 접근성 개선" /><span>현대자동차그룹(5개사이트) 웹 접근성 개선 <a href="">http://www.hyundai.com</a></span></li>
+				<li><img src="images/h_image01.jpg" alt="현대자동차그룹(5개사이트) 웹 접근성 개선" /><span>현대자동차그룹(5개사이트) 웹 접근성 개선 <a href="">http://www.hyundai.com</a></span></li>
+				<li><img src="images/h_image01.jpg" alt="현대자동차그룹(5개사이트) 웹 접근성 개선" /><span>현대자동차그룹(5개사이트) 웹 접근성 개선 <a href="">http://www.hyundai.com</a></span></li>
+				<li><img src="images/h_image01.jpg" alt="현대자동차그룹(5개사이트) 웹 접근성 개선" /><span>현대자동차그룹(5개사이트) 웹 접근성 개선 <a href="">http://www.hyundai.com</a></span></li>
+				<li><img src="images/h_image01.jpg" alt="현대자동차그룹(5개사이트) 웹 접근성 개선" /><span>현대자동차그룹(5개사이트) 웹 접근성 개선 <a href="">http://www.hyundai.com</a></span></li>
+				<li><img src="images/h_image01.jpg" alt="현대자동차그룹(5개사이트) 웹 접근성 개선" /><span>현대자동차그룹(5개사이트) 웹 접근성 개선 <a href="">http://www.hyundai.com</a></span></li>
+				<li><img src="images/h_image01.jpg" alt="현대자동차그룹(5개사이트) 웹 접근성 개선" /><span>현대자동차그룹(5개사이트) 웹 접근성 개선 <a href="">http://www.hyundai.com</a></span></li>
+				<li><img src="images/h_image01.jpg" alt="현대자동차그룹(5개사이트) 웹 접근성 개선" /><span>현대자동차그룹(5개사이트) 웹 접근성 개선 <a href="">http://www.hyundai.com</a></span></li>
+				<li><img src="images/h_image01.jpg" alt="현대자동차그룹(5개사이트) 웹 접근성 개선" /><span>현대자동차그룹(5개사이트) 웹 접근성 개선 <a href="">http://www.hyundai.com</a></span></li>
+				<li><img src="images/h_image01.jpg" alt="현대자동차그룹(5개사이트) 웹 접근성 개선" /><span>현대자동차그룹(5개사이트) 웹 접근성 개선 <a href="">http://www.hyundai.com</a></span></li>
+				<li><img src="images/h_image01.jpg" alt="현대자동차그룹(5개사이트) 웹 접근성 개선" /><span>현대자동차그룹(5개사이트) 웹 접근성 개선 <a href="">http://www.hyundai.com</a></span></li>
+				<li><img src="images/h_image01.jpg" alt="현대자동차그룹(5개사이트) 웹 접근성 개선" /><span>현대자동차그룹(5개사이트) 웹 접근성 개선 <a href="">http://www.hyundai.com</a></span></li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+		<div class="layerCon">
+			<div class="layer">
+				<a href="#" class="closeBtn">닫기</a>
+			</div>
+		</div>
+	</section>
+	<section id="page6" class="news_board">
+		<h1>news board</h1>
+		<div class="board_wrap">
+			<table class="board_tbl">
+				<caption>news board</caption>
+				<colgroup>
+					<col style="width:7%" />
+					<col style="width:9%" />
+					<col style="width:67%" />
+					<col style="width:10%" />
+					<col style="width:7%" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col">글번호</th>
+						<th scope="col">말머리</th>
+						<th scope="col">제목</th>
+						<th scope="col">작성일</th>
+						<th scope="col">조회수</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">10</th>
+						<th scope="row">alert</th>
+						<td class="line_left"><a href="#">제목</a></td>
+						<td>2014.01.02</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<th scope="row">9</th>
+						<th scope="row">alert</th>
+						<td class="line_left"><a href="#">제목</a></td>
+						<td>2014.01.02</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<th scope="row">8</th>
+						<th scope="row">alert</th>
+						<td class="line_left"><a href="#">제목</a></td>
+						<td>2014.01.02</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<th scope="row">7</th>
+						<th scope="row">alert</th>
+						<td class="line_left"><a href="#">제목</a></td>
+						<td>2014.01.02</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<th scope="row">6</th>
+						<th scope="row">alert</th>
+						<td class="line_left"><a href="#">제목</a></td>
+						<td>2014.01.02</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<th scope="row">5</th>
+						<th scope="row">alert</th>
+						<td class="line_left"><a href="#">제목</a></td>
+						<td>2014.01.02</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<th scope="row">4</th>
+						<th scope="row">alert</th>
+						<td class="line_left"><a href="#">제목</a></td>
+						<td>2014.01.02</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<th scope="row">3</th>
+						<th scope="row">alert</th>
+						<td class="line_left"><a href="#">제목</a></td>
+						<td>2014.01.02</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<th scope="row">2</th>
+						<th scope="row">alert</th>
+						<td class="line_left"><a href="#">제목</a></td>
+						<td>2014.01.02</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<th scope="row">1</th>
+						<th scope="row">alert</th>
+						<td class="line_left"><a href="#">제목</a></td>
+						<td>2014.01.02</td>
+						<td>0</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
 </body>
 </html>

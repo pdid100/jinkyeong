@@ -1,4 +1,24 @@
 $(function() {
+	var layerPopup = {
+		init: function() {
+			this.layerCon();
+		},
+		layerCon: function() {
+			var tgCon = $("div.layer");
+  			tgCon.hide();
+  			$(".project_board li img").on("click", function() {
+  				var top = $(window).scrollTop() + ($(window).height() - $(".layer").height()) / 2,
+  					left = $(window).scrollLeft() + ($(window).width() - $(".layer").width()) / 2;
+  				$(".layer").show().css({
+  					"top": top,
+  					"left": left
+  				});
+  			});
+		}
+	}
+	layerPopup.init();
+
+
 	//more button
 	var $sec = $('.section');
 	if ( $sec.length <= 1 ) $sec.find('> div:last-child').removeClass('more');

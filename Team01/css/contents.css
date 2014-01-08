@@ -34,7 +34,7 @@ textarea {overflow:auto;vertical-align:top}
 table {border-collapse:collapse;border-spacing:0}
 
 /* flexible base */
-body {font-size:0.75em;line-height:1;font-family:'맑은 고딕',Malgun-Gothic;color:#444}
+body {font-size:0.75em;line-height:1;font-family:'맑은 고딕',Malgun-Gothic;color:#333; min-width:360px;}
 h1,h2,h3,h4,h5,h6,p,pre,dl {margin:0}
 address {font-style:normal}
 hr {display:none}
@@ -45,12 +45,16 @@ legend {padding:0;border:0}
 select,input {outline:0}
 
 /* sub main */
+
+
 section {
     padding: 20px 0 50px;
     text-align: center;
+	height:100%;
+
 }
 section h1 {font-size: 4em;}
-.subMain {
+.subMain_gradi {
     padding: 70px 0 120px;
     background: #b3dced; /* Old browsers */
     background: -moz-linear-gradient(-45deg,  #b3dced 0%, #87bad6 50%, #bce0ee 100%); /* FF3.6+ */
@@ -61,23 +65,31 @@ section h1 {font-size: 4em;}
     background: linear-gradient(135deg,  #b3dced 0%,#87bad6 50%,#bce0ee 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
+
+.subMain {background-color:#b3dced; padding: 70px 0 120px;}
+
+
+#page2, #page4, #page5 {background-color:#b3dced;}
+
 .subMain h1 {
     margin-top: -20px;
     font-size: 18em;
     color: #fafafa;
+
 }
 .subMain .logo {
     display: inline-block;
-    width: 548px;
+
     margin-top: 0;
     font-size: 3em;
     color: #D63E30;
+
 }
 .subMain h2 {
 	display: inline-block;
-	width: 548px;
+	/*width: 548px;*/
     margin-top: 10px;
-	padding: 10px 0;
+	padding: 10px 80px;
 	background-color: #fafafa;
 	font-size: 2em;
 	color: #87BAD6;
@@ -89,6 +101,7 @@ section h1 {font-size: 4em;}
 	top: 40%;
 	right: 1.25%;
 }
+
 .pageSection {
 	padding: 10px 5px;
 }
@@ -102,17 +115,18 @@ section h1 {font-size: 4em;}
 }
 
 /* sub intro */
-.subIntro {padding: 70px 0;}
+.subIntro {padding: 70px 0; font-size:1.2em;}
 .subIntro h1 {
     margin-bottom: 40px;
     font-weight: normal;
     font-size: 3em;
     font-family: Georgia, Arial;
 }
-.subIntro h2 {margin-bottom: 24px;}
+.subIntro h2 {margin-bottom: 0px; padding:35px 10px 25px 10px;}
 .subIntro p {
-    line-height: 1.5;
-    font-family: "Courier New";
+    line-height: 1.5em;
+    font-family:Arial, "Courier New";
+	padding:35px;
 }
 .underline {
     width: 200px;
@@ -125,9 +139,17 @@ section h1 {font-size: 4em;}
     text-align: left;
 }
 .innerBox p {
-    padding: 20px 40px;
-    border: 1px solid #444;
+    padding: 20px 20px;
+    border: 1px solid #ccc;
+	background-color:#eee;
 }
+
+.innerBox ol, .innerBox ul {padding:0 12px ;}
+.innerBox ol li {padding:5px 0; line-height:140%;}
+.innerBox ul li{padding:15px 0; line-height:140%;}
+.innerBox h3 {margin-bottom:10px;}
+
+
 
 /* miss toba */
 .missToba {
@@ -276,7 +298,126 @@ section h1 {font-size: 4em;}
     border-top: 0;
 }
 .outfit {
-    border-top: 1px solid #ccc;
-    height: 700px;
+    border-top: 1px solid #CCCCCC;
+    height: auto;
     text-align: center;
+
+}
+.no-js .outfit {
+    height: auto;
+}
+#outfit1 {
+    border-top: 0 none;
+}
+#outfit-drawer {
+    left: 60px;
+    position: fixed;
+    top: 0;
+}
+
+
+/* project_history */
+/*.ProjectBox {width:70%; margin:0 auto; min-width:380px; border:1px solid red;}
+.project_board { width:100%; }
+ul.project_board li {float:left;  width:350px; text-align:center; margin-right:23px;}
+
+ul.project_board li img {border:3px solid #eee; min-width:370px; width:90%;}
+ul.project_board li span {padding:18px 8px; display:block;}
+*/
+
+#page5 {min-width:380px;}
+.clear {content:""; display:block; clear:both;}
+.ProjectBox {width:85%; min-width:380px; margin:0 auto;}
+
+.project_board li {float:left;  width:370px; text-align:center; margin-left:15px; margin-right:-4px;}
+.project_board li img {border:3px solid #eee; width:90%;}
+.project_board li span {padding:18px 8px; display:block;}
+
+
+.news_board h1 {
+    padding: 30px 0 40px;
+    font-size: 3em;
+    font-family: Georgia, Malgun-Gothic, '맑은 고딕';
+}
+
+/* table */
+caption {
+    visibility:hidden;
+    overflow:hidden;
+    width:0;
+    height:0;
+    font-size:0;
+    line-height:0;
+}
+table .line_left {text-align: left;}
+
+/* board */
+.board_wrap {
+    margin: 0 6%;
+    padding-top: 6px;
+    background: url('http://www.paris.co.kr/images/common/bgDiagonalLine.gif') 0 0 repeat-x;
+}
+.board_tbl {
+    width: 100%;
+    margin: 12px 0 24px;
+    text-align: center;
+}
+.board_tbl thead th {
+    padding: 6px 0 18px;
+    background: url('http://www.paris.co.kr/images/common/divisionLine.gif') 0 9px no-repeat;
+}
+.board_tbl thead th:first-child {background: 0;}
+.board_tbl tbody th,
+.board_tbl tbody td {
+    padding: 18px;
+    border: 1px solid #f4f1ee;
+    border-width: 1px 0 1px 1px;
+}
+.board_tbl tbody tr:first-child th,
+.board_tbl tbody tr:first-child td {border-top: 0;}
+.board_tbl tbody th:first-child,
+.board_tbl tbody td:first-child {
+    border: 1px solid #fff;
+    border-width: 1px 0 1px 1px;
+    background-color: #444;
+    color: #f4f1ee;
+}
+.board_tbl tbody th:nth-child(2) {border-left: 0;}
+.board_tbl tbody td:last-child {
+    border: 1px solid #fff;
+    border-width: 1px 0 1px 1px;
+    background-color: #b3dced;
+    font-weight: bold;
+    color: #f4f1ee;
+}
+
+
+/* layer */
+.layer {
+    position: absolute;
+    top: 10383px;
+    left: 0;
+    max-width: 800px;
+    min-width: 600px;
+    height: 500px;
+    border: 1px solid #000;
+    background: #fff;
+}
+.layer .closeBtn {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    padding: 10px 0;
+    border: 1px solid #000;
+}
+.layer .bg {
+    position:absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: #000; 
+    opacity:.5; filter:alpha(opacity=50);
 }
