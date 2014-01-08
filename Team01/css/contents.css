@@ -1,0 +1,282 @@
+@charset "utf-8";
+/* bonnybak mode 12/27 2013 */
+
+/* reset */
+/* base */
+html {font-family:'돋움',Dotum,sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+body {margin:0}
+/* links */
+a {background:transparent}
+a:focus {outline:thin dotted}
+a:active,a:hover {outline:0}
+/* typography */
+abbr[title] {border-bottom:1px dotted}
+strong {font-weight:bold}
+pre {white-space:pre-wrap}
+q {quotes:'\201C' '\201D' '\2018' '\2019'}
+small {font-size:80%}
+/* embedded content */
+img {border:0}
+/* figure */
+figure {margin:0}
+/* form */
+button,input,select,textarea {margin:0;font-size:100%;font-family:inherit}
+button,input {line-height:normal}
+button,select {text-transform:none}
+button,html input[type="button"],input[type="reset"],input[type="submit"] {-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled] {cursor:default}
+input[type="checkbox"],input[type="radio"] {padding:0;box-sizing:border-box}
+input[type="search"] {-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration {-webkit-appearance:none}
+button::-moz-focus-inner,input::-moz-focus-inner {padding:0;border:0}
+textarea {overflow:auto;vertical-align:top}
+/* table */
+table {border-collapse:collapse;border-spacing:0}
+
+/* flexible base */
+body {font-size:0.75em;line-height:1;font-family:'맑은 고딕',Malgun-Gothic;color:#444}
+h1,h2,h3,h4,h5,h6,p,pre,dl {margin:0}
+address {font-style:normal}
+hr {display:none}
+ol,ul {margin:0;padding:0;list-style:none}
+a {color:#666;text-decoration:none}
+fieldset {margin:0;padding:0;border:0}
+legend {padding:0;border:0}
+select,input {outline:0}
+
+/* sub main */
+section {
+    padding: 20px 0 50px;
+    text-align: center;
+}
+section h1 {font-size: 4em;}
+.subMain {
+    padding: 70px 0 120px;
+    background: #b3dced; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #b3dced 0%, #87bad6 50%, #bce0ee 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#b3dced), color-stop(50%,#87bad6), color-stop(100%,#bce0ee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg,  #b3dced 0%,#87bad6 50%,#bce0ee 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  #b3dced 0%,#87bad6 50%,#bce0ee 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg,  #b3dced 0%,#87bad6 50%,#bce0ee 100%); /* IE10+ */
+    background: linear-gradient(135deg,  #b3dced 0%,#87bad6 50%,#bce0ee 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.subMain h1 {
+    margin-top: -20px;
+    font-size: 18em;
+    color: #fafafa;
+}
+.subMain .logo {
+    display: inline-block;
+    width: 548px;
+    margin-top: 0;
+    font-size: 3em;
+    color: #D63E30;
+}
+.subMain h2 {
+	display: inline-block;
+	width: 548px;
+    margin-top: 10px;
+	padding: 10px 0;
+	background-color: #fafafa;
+	font-size: 2em;
+	color: #87BAD6;
+}
+
+/* pagination */
+#pagination {
+	position: absolute;
+	top: 40%;
+	right: 1.25%;
+}
+.pageSection {
+	padding: 10px 5px;
+}
+.pageSection a {display: block;}
+.pageDot {
+	width: 9px;
+	height: 9px;
+	border: 1px solid #fafafa;
+	border-radius: 5px;
+	background-color: red;
+}
+
+/* sub intro */
+.subIntro {padding: 70px 0;}
+.subIntro h1 {
+    margin-bottom: 40px;
+    font-weight: normal;
+    font-size: 3em;
+    font-family: Georgia, Arial;
+}
+.subIntro h2 {margin-bottom: 24px;}
+.subIntro p {
+    line-height: 1.5;
+    font-family: "Courier New";
+}
+.underline {
+    width: 200px;
+    margin: 40px auto;
+    border-bottom: 1px solid #444;
+}
+.innerBox {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+.innerBox p {
+    padding: 20px 40px;
+    border: 1px solid #444;
+}
+
+/* miss toba */
+.missToba {
+    position: relative;
+    width: 310px;
+    height: 475px;
+    margin: 0 auto;
+}
+.faceWrap {
+    position: absolute;
+    top: 96px;
+    left: 0;
+    z-index: 1;
+    width: 310px;
+    height: 220px;
+    padding: 45px 0 0 0;
+    border-radius: 100%;
+    background: #ea232a;
+}
+.face {
+    width: 260px;
+    height: 210px;
+    margin: 0 auto;
+    border-radius: 100%;
+    background: #fff;
+}
+.ears {
+    position: relative;
+    width: 200px;
+    height: 90px;
+    margin: 0 auto;
+}
+.ears div {
+    position: absolute;
+    top: 10px;
+    left: 130px;
+    width: 60px;
+    height: 150px;
+    border-radius: 40% 40% 0 0;
+    background: #ea232a;
+}
+.ears div:first-child {left: 10px;}
+.eyes div {
+    position: absolute;
+    top: 130px;
+    left: 100px;
+    width: 20px;
+    height: 30px;
+    border-radius: 100%;
+    background: #333;
+}
+.eyes div:first-child {left: 185px;}
+.nose {
+    position: absolute;
+    top: 160px;
+    left: 140px;
+    z-index: 1;
+    width: 30px;
+    height: 20px;
+    border-radius: 100%;
+    background: #333;
+}
+.mouth div {
+    position: absolute;
+    top: 160px;
+    left: 157px;
+    width: 35px;
+    height: 35px;
+    box-shadow: -2px 2px 0 #333;
+    border-radius: 100%;
+    background: #fff;
+}
+.mouth div:first-child {
+    left: 118px;
+    box-shadow: 2px 2px 0 #333;
+}
+.cheek div {
+    position: absolute;
+    top: 280px;
+    left: 30px;
+    z-index: 2;
+    width: 100px;
+    height: 50px;
+    border-radius: 100%;
+    background: #fccdc7;
+    -ms-transform:rotate(35deg); /* IE 9 */
+    -moz-transform:rotate(35deg); /* Firefox */
+    -webkit-transform:rotate(35deg); /* Safari and Chrome */
+    -o-transform:rotate(35deg); /* Opera */
+    transform:rotate(35deg);
+}
+.cheek div:first-child {
+    left: 180px;
+    -ms-transform:rotate(-35deg); /* IE 9 */
+    -moz-transform:rotate(-35deg); /* Firefox */
+    -webkit-transform:rotate(-35deg); /* Safari and Chrome */
+    -o-transform:rotate(-35deg); /* Opera */
+    transform:rotate(-35deg);
+}
+.body {
+    position: absolute;
+    top: 350px;
+    left: 105px;
+    width: 100px;
+    height: 90px;
+    background: #ea232a
+}
+.buttons div {
+    position: absolute;
+    top: 20px;
+    left: 45px;
+    z-index: 1;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #333;
+}
+.buttons div:first-child {top: 45px;}
+.legs div {
+    position: absolute;
+    top: 440px;
+    left: 105px;
+    width: 20px;
+    height: 30px;
+    border-radius: 0 0 70% 70%;
+    box-shadow: inset 0 -10px 0 #222;
+    background: #ea232a;
+}
+.legs div:first-child {left: 185px;}
+.arms div {
+    position: absolute;
+    top: 355px;
+    left: 205px;
+    width: 40px;
+    height: 20px;
+    border-radius: 0 70% 70% 0 ;
+    background: #ea232a;
+}
+.arms div:first-child {
+    border-radius: 70% 0 0 70%;
+    left: 65px;
+}
+
+
+#outfit1 {
+    border-top: 0;
+}
+.outfit {
+    border-top: 1px solid #ccc;
+    height: 700px;
+    text-align: center;
+}
