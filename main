@@ -1,0 +1,106 @@
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>WSRI - 웹표준연구센터</title>
+  <link rel="shortcut icon" href="images/cidow.ico" />
+  <meta http-equiv="X-UA-Compatible" content="IE=9" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, target-densitydpi=medium-dpi" />
+  <link rel="stylesheet" href="css/common.css" />
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script> 
+  <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+  <script type="text/ecmascript">
+  $(document).ready(function () {
+      var $container = $('.section');
+      // initialize
+      $container.masonry({
+        columnWidth: 240,
+        itemSelector: '.item'
+      });
+    });
+  </script>
+</head>
+<body>
+    <!-- wrap -->
+    <div id="wrap">
+      <!-- section -->
+      <div class="section" id="section_1">
+        <div class="item box4">
+          <a href="#">
+            <img src="images/alert_logo.jpg" alt="alert" />
+            <span>
+              <strong>T인의 쉼터 'Alert(알럿)'을 아시나요?</strong> 
+              주소 : 서울시 강남구 역삼동 829-2 수연빌딩 B2 <br />
+              대관문의 : 070 – 8672 - 5910
+            </span>
+          </a>
+        </div>
+        <div class="item box1">
+          <a href="#" class="imgBox"><img src="images/location.gif" alt="" /></a>
+        </div>
+        <div class="item boxV2">
+          <a href="#" class="imgTxtInfo">
+            <img src="images/webstandards2.jpg" alt="" />
+            <span>
+              <strong>웹표준이란?</strong>
+              월드 와이드 웹의 측면을 서술하고 정의하는 공식 표준이나 다른 기술 규격을 가리키는 일반적인 용어이다.
+            </span>
+          </a>
+        </div>
+        <div class="item box1">
+          <a href="#" class="imgBox">
+            <img src="images/shlee.jpg" alt="이승헌 책임연구원" />
+          </a>
+        </div>
+        <div class="item box1">
+          <a href="http://www.cidow.com" target="_blank" title="새창열림" class="imgBox">
+            <img src="images/cidow_logo.gif" alt="시도우" />
+          </a>
+        </div>
+        <div class="item box1">
+          <a href="#" class="news">N</a>
+        </div>
+        <div class="item boxH2">
+          <a href="#">
+            <img src="images/cidow_workshop.jpg" alt="" />
+            <span>
+              <strong>2013년 시도우 동계워크샵</strong>
+              여주 썬벨리호텔
+            </span>
+          </a>
+        </div>
+        <div class="item box1">
+          <a href="#" class="history">H</a>
+        </div>
+        <div class="item box4">
+          <a href="#">
+            <img src="images/webaccessibility.jpg" alt="웹접근성 품질마크 한국정보화진흥원" />
+            <span>
+              <strong>웹접근성</strong>
+                장애를 가진 사람과 장애를 가지지 않은 사람 모두가 웹사이트를 이용할 수 있게 하는 방식을 가리킨다
+            </span>
+          </a>
+        </div>
+        <div class="item box1">
+          <a href="#" class="imgBox"><img src="images/bonny_park.jpg" alt="박보니 연구원" /></a>
+        </div>
+        <div class="item box1">
+          <a href="#" target="_blank" title="새창열림" class="blog">B</a>
+        </div>
+        <div class="item box1">
+          <a href="https://github.com/moya85/cidow" target="_blank" title="새창열림" class="imgBox">
+            <img src="images/cidow_github.gif" alt="Github" />
+          </a>
+        </div>
+      </div>
+      <!-- //section -->
+    </div>
+    <!-- //wrap -->
+
+    <!-- 
+      이미지와 사이즈 고정적이지 않은 박스 - imgAuto
+      이미지와 텍스트가 함께 쓰여지는 박스 - itemTxt
+    -->
+</body>
+</html>
