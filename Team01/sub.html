@@ -5,10 +5,9 @@
 	<link rel="shortcut icon" href="images/cidow.ico" />
 	<title>WSRI - 웹표준연구센터</title>
 	<link rel="stylesheet" href="css/contents.css">
-	<script src="js/mootools-yui-compressed.js"></script>
-	<script src="js/krystalrae-yc.js"></script>
-	<script src="js/mootools-yui-compressed.js"></script>
-	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/jquery-ui-1.9.0.custom.min.js"></script>
+	<script src="js/jquery.tools.min.js"></script>
 	<script src="js/common.js"></script>
   <!-- <script src="js/modernizr-custom-2.js"></script> -->
 </head>
@@ -20,7 +19,7 @@
 	<section id="page1" class="subIntro">
 		<h1>WSRI</h1>
 		<div class="underline"></div>
-		<p>우리는 웹 컨텐츠를 제작할 때 누구나 제한없이 접근할 수 있도록 웹 표준과 웹 접근성을 연구하는 퍼블리셔들로 구성된 연구소 입니다.<br />웹 표준과 접근성에 관한 연구 뿐 아니라 최신 웹 트랜드와 기술(html5, css3, javascript, jquery)들을 습득하고 연구하고 있습니다.</p>
+		<p>WRSI는 웹표준 웹접근성 전문 디지털 에이젼시 (주)시도우의 사내연구소로 웹1998년 (주)시도우 창업과 함께 설립되어 국내 최초로 웹표준 관련 기술을 연구와 웹접근성 관련기술 개발하고 웹접근성 컨설팅방법론등을 체계화 시킨 국내 유일의 웹표준기술 연구소 입니다<br /> 현재는 17명의 연구원들이 	HTML5, ARIA등 차세대 웹표준, 웹접근성 기술에 중점을 두고 연구에 몰두하고 있습니다.</p>
 	</section>
 	<section id="page2" class="subIntro">
 		<h1>Web Standard</h1>
@@ -168,24 +167,27 @@
 		<div class="underline"></div>
 		<div class="ProjectBox" >
 			<ul class="project_board">
-				<li><img src="images/h_image01.jpg" alt="현대자동차그룹(5개사이트) 웹 접근성 개선" /><span>현대자동차그룹(5개사이트) 웹 접근성 개선 <a href="">http://www.hyundai.com</a></span></li>
-				<li><img src="images/h_image01.jpg" alt="현대자동차그룹(5개사이트) 웹 접근성 개선" /><span>현대자동차그룹(5개사이트) 웹 접근성 개선 <a href="">http://www.hyundai.com</a></span></li>
-				<li><img src="images/h_image01.jpg" alt="현대자동차그룹(5개사이트) 웹 접근성 개선" /><span>현대자동차그룹(5개사이트) 웹 접근성 개선 <a href="">http://www.hyundai.com</a></span></li>
-				<li><img src="images/h_image01.jpg" alt="현대자동차그룹(5개사이트) 웹 접근성 개선" /><span>현대자동차그룹(5개사이트) 웹 접근성 개선 <a href="">http://www.hyundai.com</a></span></li>
-				<li><img src="images/h_image01.jpg" alt="현대자동차그룹(5개사이트) 웹 접근성 개선" /><span>현대자동차그룹(5개사이트) 웹 접근성 개선 <a href="">http://www.hyundai.com</a></span></li>
-				<li><img src="images/h_image01.jpg" alt="현대자동차그룹(5개사이트) 웹 접근성 개선" /><span>현대자동차그룹(5개사이트) 웹 접근성 개선 <a href="">http://www.hyundai.com</a></span></li>
-				<li><img src="images/h_image01.jpg" alt="현대자동차그룹(5개사이트) 웹 접근성 개선" /><span>현대자동차그룹(5개사이트) 웹 접근성 개선 <a href="">http://www.hyundai.com</a></span></li>
-				<li><img src="images/h_image01.jpg" alt="현대자동차그룹(5개사이트) 웹 접근성 개선" /><span>현대자동차그룹(5개사이트) 웹 접근성 개선 <a href="">http://www.hyundai.com</a></span></li>
-				<li><img src="images/h_image01.jpg" alt="현대자동차그룹(5개사이트) 웹 접근성 개선" /><span>현대자동차그룹(5개사이트) 웹 접근성 개선 <a href="">http://www.hyundai.com</a></span></li>
-				<li><img src="images/h_image01.jpg" alt="현대자동차그룹(5개사이트) 웹 접근성 개선" /><span>현대자동차그룹(5개사이트) 웹 접근성 개선 <a href="">http://www.hyundai.com</a></span></li>
-				<li><img src="images/h_image01.jpg" alt="현대자동차그룹(5개사이트) 웹 접근성 개선" /><span>현대자동차그룹(5개사이트) 웹 접근성 개선 <a href="">http://www.hyundai.com</a></span></li>
-				<li><img src="images/h_image01.jpg" alt="현대자동차그룹(5개사이트) 웹 접근성 개선" /><span>현대자동차그룹(5개사이트) 웹 접근성 개선 <a href="">http://www.hyundai.com</a></span></li>
+				<li><a href="#"><img src="images/h_image01.jpg" alt="현대자동차그룹(5개사이트) 웹 접근성 개선" /><span>현대자동차그룹(5개사이트) 웹 접근성 개선</span></a></li>
+				<li><a href="#"><img src="images/uplus.jpg" alt="LG유플러스 웹 접근성 개선 리뉴얼" /><span>LG유플러스 웹 접근성 개선 리뉴얼 </span></a></li>
+				<li><a href="#"><img src="images/seoul_scourt.jpg" alt="지방법원 홈페이지 웹 접근성 개선 2단계사업(13개 사이트)" /><span>지방법원 홈페이지 웹 접근성 개선 2단계사업<br />(13개 사이트)</span></a></li>
+				<li><a href="#"><img src="images/shinhancard.jpg" alt="신한카드 웹접근성 개선 프로젝트 - 퍼블리싱 및 컨설팅 부문" /><span>신한카드 웹접근성 개선 프로젝트 <br />- 퍼블리싱 및 컨설팅 부문</span></a></li>
+				<li><a href="#"><img src="images/lottedfs.jpg" alt="롯데면세점 2개 사이트 접근성 개선(모바일포함)" /><span>롯데면세점 2개 사이트 접근성 개선(모바일포함)</span></a></li>
+				<li><a href="#"><img src="images/ibks.jpg" alt="IBK투자증권 웹 접근성 개선 리뉴얼" /><span>IBK투자증권 웹 접근성 개선 리뉴얼</span></a></li>
+				<li><a href="#"><img src="images/uniqlo.jpg" alt="롯데 FRL코리아 채용사이트 웹 접근성 개선" /><span>롯데 FRL코리아 채용사이트 웹 접근성 개선</span></a></li>
 			</ul>
 		</div>
 		<div class="clear"></div>
-		<div class="layerCon">
+		<div id="layerWrap">
 			<div class="layer">
-				<a href="#" class="closeBtn">닫기</a>
+				<div class="layerHead">
+					<h3>현대자동차그룹(5개사이트) 웹 접근성 개선</h3>
+				</div>
+				<div class="layerCon">
+					<img src="images/h_image01.jpg" alt="현대자동차 웹사이트" /> <br /><br />
+					<a href="http://www.hyundai.com/kr/index.do"><strong>http://www.hyundai.com/kr/index.do</strong></a>
+					<p>이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님</p>
+				</div>
+				<a href="#" class="closeBtn" title="닫기">x</a>
 			</div>
 		</div>
 	</section>
@@ -277,12 +279,15 @@
 					<tr>
 						<th scope="row">1</th>
 						<th scope="row">alert</th>
-						<td class="line_left"><a href="#">제목</a></td>
+						<td class="line_left"><a href="#layerPop" data-rel="layer" class="popOpen">제목</a></td>
 						<td>2014.01.02</td>
 						<td>0</td>
 					</tr>
 				</tbody>
 			</table>
+			<div id="layerPop" class="layerPop">
+				<a href="#" class="popClose">닫기</a>
+			</div>
 		</div>
 	</section>
 </body>

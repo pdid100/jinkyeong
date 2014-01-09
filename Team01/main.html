@@ -1,5 +1,5 @@
-  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ko">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>WSRI - 웹표준연구센터</title>
@@ -7,9 +7,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, target-densitydpi=medium-dpi" />
   <link rel="stylesheet" href="css/common.css" />
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script> 
-  <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+  <script src="http://d3lp1msu2r81bx.cloudfront.net/kjs/js/lib/kinetic-v4.7.4.min.js"></script>
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script> 
+  <script src="js/masonry.pkgd.min.js"></script>
   <script type="text/ecmascript">
   $(document).ready(function () {
       var $container = $('.section');
@@ -40,7 +41,7 @@
           <a href="#" class="imgBox"><img src="images/location.gif" alt="" /></a>
         </div>
         <div class="item boxV2">
-          <a href="#" class="imgTxtInfo">
+          <a href="#webStandard" class="imgTxtInfo">
             <img src="images/webstandards2.jpg" alt="" />
             <span>
               <strong>웹표준이란?</strong>
@@ -59,7 +60,7 @@
           </a>
         </div>
         <div class="item box1">
-          <a href="#" class="news">N</a>
+          <a href="#newsBoard" class="news">N</a>
         </div>
         <div class="item boxH2">
           <a href="#">
@@ -71,10 +72,10 @@
           </a>
         </div>
         <div class="item box1">
-          <a href="#" class="history">H</a>
+          <a href="#pjHistory" class="history">H</a>
         </div>
         <div class="item box4">
-          <a href="#">
+          <a href="#webAccessibility">
             <img src="images/webaccessibility.jpg" alt="웹접근성 품질마크 한국정보화진흥원" />
             <span>
               <strong>웹접근성</strong>
@@ -93,14 +94,49 @@
             <img src="images/cidow_github.gif" alt="Github" />
           </a>
         </div>
+		 <div id="ani"></div>
       </div>
       <!-- //section -->
+		<script defer="defer">
+		  var stage = new Kinetic.Stage({
+			container: 'ani',
+			width: 1200,
+			height: 100
+		  });
+		  var layer = new Kinetic.Layer();
+
+		  var hexagon = new Kinetic.RegularPolygon({
+			x: stage.getWidth() / 1,
+			y: stage.getHeight() / 2,
+			sides: 10,
+			radius: 40,
+			fill: 'blue',
+			stroke: 'black',
+			strokeWidth: 4
+		  });
+
+		  layer.add(hexagon);
+		  stage.add(layer);
+
+		  var amplitude = 560;
+		  var period = 10000;
+		  // in ms
+		  var centerX = stage.getWidth() / 2;
+
+		  var anim = new Kinetic.Animation(function(frame) {
+			hexagon.setX(amplitude * Math.sin(frame.time * 2 * Math.PI / period) + centerX);
+		  }, layer);
+
+		  anim.start();
+
+		</script>
     </div>
     <!-- //wrap -->
 
-    <!-- 
-      이미지와 사이즈 고정적이지 않은 박스 - imgAuto
-      이미지와 텍스트가 함께 쓰여지는 박스 - itemTxt
-    -->
+
+	<!-- 
+	  이미지와 사이즈 고정적이지 않은 박스 - imgAuto
+	  이미지와 텍스트가 함께 쓰여지는 박스 - itemTxt
+	-->
 </body>
 </html>
