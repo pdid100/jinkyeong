@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>Dimmed Layer</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		a {text-decoration: none;}
+
+		/* layer */
+		.layer {
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    z-index: 100;
+		    max-width: 1000px;
+		    min-width: 550px;
+		    height: 600px;
+		    border: 1px solid #000;
+		    background: #fff;
+		}
+		.layer .layerHead {
+		    height: 60px;
+		    background: #b3dced;
+		    text-align: left;
+		}
+		.layerHead h3 {
+		    padding: 15px 0 0 20px;
+		    font-size: 20px;
+		}
+		.layer .layerCon {
+		    overflow-y: scroll;
+		    height: 460px;
+		    padding: 20px;
+		    margin-top: 20px;
+		    text-align: center;
+		}
+		.layerCon img { max-width: 700px;}
+		.layer .closeBtn {
+		    display: block;
+		    position: absolute;
+		    top: 0px;
+		    right: 18px;
+		    font-weight: bold;
+		    font-size: 40px;
+		    color: #000;
+		}
+		#layerWrap .dimmed {
+		    position:absolute;
+		    top: 0;
+		    left: 0;
+		    z-index: 10;
+		    width: 100%;
+		    height: 100%;
+		    background: #000;
+		    opacity:.5; filter:alpha(opacity=50);
+		}
+	</style>
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script>
+		(function($) {
+			$.fn.layerPopup = function(options) {
+				var defaults = {
+					tgAnchor: $("ul.pjHistory li a")
+				}
+				var options = $.extend({}, defaults, options);
+			    return this.each(function() {
+			      	var o = options,
+			      		$this  = $(this),
+			          	$layer = $this.find(".layer"),
+			          	$layerAnchor = $this.parents().find(o.tgAnchor),
+			          	$layerClose = $this.find(".closeBtn");
+			        $layer.hide();
+			        $layerAnchor.each(function() {
+		  				$(this).on("click", function(e) {
+			  				e.preventDefault();
+			  				var top = $(window).scrollTop() + ($(window).height() - $layer.height()) / 2,
+			  					left = $(window).scrollLeft() + ($(window).width() - $layer.width()) / 2;
+			  				$this.append('<div class="dimmed"></div>');
+			  				$(".dimmed").css("height", $(document).height());
+			  				$layer.show().css({
+			  					"top": top,
+			  					"left": left
+			  				});
+			  				$(window).on("resize", function() {
+			  					$layer.position({
+			  						of: $(window),
+			  						at: "center center",
+			  						my: "center center",
+			  						offset: "0 -1",
+			  						collision: "none"
+			  					});
+			  				});
+			  				$("html").css("overflow-y", "hidden");
+			  			});
+			  			$layerClose.on("click", function(e) { 
+			  				e.preventDefault();
+			  				$layer.hide();
+			  				$(".dimmed").remove();
+							$("html").css("overflow-y", "auto");
+			  			});
+
+			  		});
+			    });
+		    };
+		    $(function() {
+				$("#layerWrap").layerPopup({
+					tgAnchor: $(".gallery a")
+				});
+			});
+		})(jQuery);
+	</script>
+</head>
+<body>
+	<div class="section">
+		<ul class="pjHistory">
+			<li><a href="#">현대자동차</a></li>
+			<li><a href="#">신한카드</a></li>
+			<li><a href="#">롯데면세점</a></li>
+			<li><a href="#">우리투자증권</a></li>
+			<li><a href="#">LG전자 서비스센터</a></li>
+			<li><a href="#">대법원</a></li>
+		</ul>
+	</div>
+	<div class="section">
+		<div class="gallery">
+			<a href="#">gallery test</a>
+			<a href="#">gallery test</a>
+		</div>
+	</div>
+	<div id="layerWrap">
+		<div class="layer">
+			<div class="layerHead">
+				<h3>현대자동차그룹(5개사이트) 웹 접근성 개선</h3>
+			</div>
+			<div class="layerCon">
+				<img src="images/h_image01.jpg" alt="현대자동차 웹사이트" /> <br /><br />
+				<a href="http://www.hyundai.com/kr/index.do"><strong>http://www.hyundai.com/kr/index.do</strong></a>
+				<p>이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님이승헌책임님</p>
+			</div>
+			<a href="#" class="closeBtn" title="닫기">x</a>
+		</div>
+	</div>
+</body>
+</html>
