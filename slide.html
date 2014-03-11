@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>slide</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		li {list-style: none;}
+		a{
+			color: #222;
+			text-decoration: none;
+		}
+		.slideWrap {
+			position: relative;
+			width: 530px;
+		}
+		.slideList{
+			overflow: hidden;
+			width: 490px;
+			margin-left: 20px;
+			background: #eee;
+		}
+		.slideCon {
+			overflow: hidden;
+			position: relative;
+			left: 0;
+			width: 1000em;
+			padding: 5px 0;	
+		}
+		.slideCon li {
+			float: left;
+			width: 100px;
+			height: 50px;
+			margin: 10px;
+			border: 1px solid #000;
+			background: #fff;
+		}
+		.prevBtn,.nextBtn {
+			display: block;
+			position:absolute;
+			top: 0;
+			width: 20px;
+			height: 82px;
+			background: #000;
+			color: #fff;
+		}
+		.prevBtn {left: 0;}
+		.nextBtn {right: 0;}
+	</style>
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script>
+		$(function() {
+			$.fn.feSlide = function(options) {
+				// feTab default options
+				return this.each(function() {
+					var $this = $(this),
+						$tgCon = $this.find(".slideCon"),
+						$tgList = $tgCon.find("li"),
+						$tgListSize = $tgList.size(),
+						$tgListW = $tgList.outerWidth(),
+						$tgConW = $tgListW * $tgListSize,
+						$tgBtn = $this.find("> a");
+					currentIdx = 0;
+					$tgBtn.on("click", function() {
+						if ( $tgList.is(":animated") 
+							|| $tgCon.is(":animated") ) return false;
+						if ( $(this).hasClass("nextBtn") ) {
+							++currentIdx
+							console.log(currentIdx);
+							$tgCon.animate({
+								left: - (490 * (currentIdx))
+							}, 400);
+						} else if ( $(this).hasClass("prevBtn") ) {
+							--currentIdx
+							console.log(currentIdx);
+							$tgCon.animate({
+								left: - (490 * (currentIdx))
+							}, 400);
+							if ( currentIdx < 0 ) {
+								$tgCon.stop();
+								currentIdx = 0;
+							} 
+						};
+					});
+				});
+			};
+			$(".slideWrap").feSlide();	
+		});
+	</script>
+</head>
+<body>
+	<div class="slideWrap">
+		<a href="#" class="prevBtn">이전</a>
+		<div class="slideList">
+			<ul class="slideCon">
+				<li><a href="#">images</a></li>
+				<li><a href="#">images</a></li>
+				<li><a href="#">images</a></li>
+				<li><a href="#">images</a></li>
+				<li><a href="#">images1</a></li>
+				<li><a href="#">images1</a></li>
+				<li><a href="#">images1</a></li>
+				<li><a href="#">images1</a></li>
+				<li><a href="#">images2</a></li>
+				<li><a href="#">images2</a></li>
+				<li><a href="#">images2</a></li>
+				<li><a href="#">images2</a></li>
+				<li><a href="#">images3</a></li>
+				<li><a href="#">images3</a></li>
+				<li><a href="#">images3</a></li>
+				<li><a href="#">images3</a></li>
+			</ul>
+		</div>
+		<a href="#" class="nextBtn">다음</a>
+	</div>
+</body>
+</html>
