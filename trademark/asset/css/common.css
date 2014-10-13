@@ -1,0 +1,47 @@
+@charset "utf-8";
+@import "normalize.css";
+
+/* sublayout */
+body {background: #222;}
+#wrap {
+	width: 1024px;
+	margin:0 auto;
+}
+#header {height: 169px;}
+#container {position: relative;*zoom: 1;}
+#container:after {
+	display: block;
+	clear: both;
+	content: '';
+}
+#nav {float: left;width: 231px;}
+#contents {
+	float: left;
+	width: 713px;
+	padding: 0 22px 0 58px;
+}
+.rightMenu {
+	position: absolute;
+	right: -172px;
+}
+#footer {
+	margin-top:80px;
+	height: 141px;
+	background: url('../img/bg_line_bottom.gif') repeat-x left top;
+}
+#footer .bottom {width: 1024px;margin: 0 auto;}
+.imgSprite {
+	display: block;
+	overflow: hidden;
+	position: absolute;
+	left: -9999px;
+	width: 1px;
+	height: 1px;
+	font-size: 0;
+	line-height: 0;
+	text-indent: -9999px;
+}
+.description {letter-spacing: -0.3px;line-height: 1.6;}
+.description li {margin-top: 22px;}
+
+
